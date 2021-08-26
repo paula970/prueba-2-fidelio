@@ -1,0 +1,322 @@
+/*-----------------------------------------------------------  General ---------------------------------------------------------------*/
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    max-width: 1920px;
+}
+
+body
+{
+    padding-top: 4em;
+    
+}
+
+/*-----------------------------------------------------------  Menú ---------------------------------------------------------------*/
+.menu
+{
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #fcc2da;
+}
+
+.menu-items
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-family: Lato-Regular;
+    font-size: 22px;
+}
+
+h2
+{
+    font-size: 45px;
+    font-family: Roboto;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.menu-items li:hover
+{
+    color: #009EFF;
+    border-bottom: 3px solid #009EFF;
+}
+
+/*-----------------------------------------------------------  Header ---------------------------------------------------------------*/
+
+.header
+{
+    background: #ffffff;
+    padding: 2rem 10rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header .img-top
+{
+    width: 190px;
+    height: 156px;
+}
+
+.header .img-top-right
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(296px);
+    height: 649px;   
+}
+
+.header .card
+{
+    width: 50%;
+}
+
+.header .card-title
+{
+    font-family: Lato-Light;
+    font-size: 40px;
+    color: #717076;
+}
+
+.header .card-text
+{
+    font-family: Lato-Regular;
+    font-size: 20px;
+    color: #717076;
+}
+
+.header .img-top-right-mobile
+{
+    display: none; 
+}
+
+@media only screen and (max-width: 768px)
+{
+    .header
+    {
+        background: #FCC2DA;
+        padding: 1rem 2rem;
+    }
+
+    .header .card
+    {
+        width: 100%;
+    }
+
+    .header .img-top-right
+    {
+        position: inherit;
+        top: none;
+        right: none;
+        transform: none;
+        height: 649px;   
+    }
+    .header .img-top-right
+    {
+        display: none; 
+    }
+    .header .img-top-right-mobile
+    {
+        display: block;
+        width: 100%; 
+    }
+}
+
+/*-----------------------------------------------------------  Sección 1 ---------------------------------------------------------------*/
+
+.seccion-1
+{
+    background: #f8f4f3;
+    padding: 2rem 10rem;
+}
+
+.header .card, .seccion-1 .card
+{
+    background-color: unset !important;
+    border: none !important;
+    border-radius: none !important;
+}
+
+.seccion-1 .card-title
+{
+    color: #393939;
+    font-family: Roboto;
+    font-size: 45px;
+}
+
+.seccion-1 .card-text
+{
+    color: #333333;
+    font-family: Open Sans;
+    font-size: 16px;
+}
+
+.card-content
+{
+    margin-bottom: 1.5rem;
+}
+
+.card-end
+{
+    display: flex;
+}
+
+.card-text-end
+{
+    color: #636161;
+    font-family: Lato;
+    font-size: 25px;
+}
+
+.seccion-1 .card-end img
+{
+    width: 46px;
+    height: 67px;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .seccion-1
+    {
+        padding: 1rem 2rem;
+    }
+}
+
+/*-----------------------------------------------------------  Sección 2 ---------------------------------------------------------------*/
+
+.seccion-2
+{
+    background: #eebfcf;
+    text-align: center;
+    padding: 2rem 10rem;
+
+}
+
+
+.seccion-2-card-group
+{   
+    display: flex;
+    color: #012020;
+}
+
+.seccion-2__card
+{
+    padding: 0 60px;
+}
+
+.seccion-2-card-title
+{
+    font-size: 40px;
+    
+}
+.seccion-2-card-text
+{
+    font-size: 16px;
+}
+
+.seccion-2 .card-end img
+{
+    width: 46px;
+    height: 67px;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .seccion-2
+    {
+        padding: 1rem 2rem;
+    }
+    .seccion-2-card-group
+    {
+        flex-wrap: wrap;
+    }
+   
+}
+
+/*-----------------------------------------------------------  Sección 3 ---------------------------------------------------------------*/
+
+
+.seccion-3
+{
+    background: #ffffff;
+    padding: 2rem 10rem; 
+}
+
+.seccion-3 ul
+{
+    list-style-image: url('./assets/desktop/Trazado\ 649.png');
+}
+
+.seccion-3 h2
+{
+    color: #333333;
+}
+
+.seccion-3-list li
+{
+    position: relative;
+    padding: 5px 5px;
+    font-family: Open Sans;
+    font-size: 23px;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .seccion-3
+    {
+        padding: 1rem 2rem;
+    }
+}
+
+/*-----------------------------------------------------------  Formulario ---------------------------------------------------------------*/
+
+.formulario
+{
+    background: #eebfcf;
+    text-align: center;
+    padding: 2rem 10rem;
+
+}
+
+.formulario-text
+{
+    font-size: 25px;
+    color: #6B6B6B;
+    font-family: Roboto;
+    
+}
+
+u
+{
+    color: #6B6B6B;
+    font-family: Open Sans;
+    font-size: 20px;
+}
+
+.form-check-input
+{
+    float: none !important;
+}
+.btn-primary
+{
+    background: #2580eb !important;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .formulario
+    {
+        padding: 1rem 2rem;
+    }
+}
+  
+
+
